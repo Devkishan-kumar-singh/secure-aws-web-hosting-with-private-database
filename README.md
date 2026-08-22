@@ -1,5 +1,42 @@
 # secure-aws-web-hosting-with-private-database
-# Secure AWS Web Hosting with Private Database
+This project demonstrates a secure AWS cloud infrastructure using VPC, public/private subnets, NAT Gateway, Internet Gateway, VPN connectivity, and database isolation. The architecture follows AWS networking and security best practices to protect backend resources while maintaining internet accessibility for web applications.
+# Project Screenshots
+
+## Architecture Diagram
+
+![Architecture](AWS_architecture_diagram.png)
+
+## VPC Configuration
+
+![VPC](Screenshots/Vpc.png.png)
+
+## Public Subnet
+
+![Public Subnet](Screenshots/public_subnet.png.png)
+
+## Private Subnet
+
+![Private Subnet](Screenshots/private_subnet.png.png)
+
+## NAT Gateway
+
+![NAT Gateway](Screenshots/NAT_Gateway.png.png)
+
+## Internet Gateway
+
+![Internet Gateway](Screenshots/Internet_gateway.png.png)
+
+## Route Table
+
+![Route Table](Screenshots/Routetable.png.png)
+
+## EC2 Instance
+
+![EC2](Screenshots/EC2-instances.png.png)
+
+## Database Tables
+
+![Database](Screenshots/MySQL_Tables.png.png)
 
 ## Project Overview
 
