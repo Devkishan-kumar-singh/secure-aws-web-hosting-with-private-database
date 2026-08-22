@@ -1,140 +1,81 @@
-# secure-aws-web-hosting-with-private-database
-This project demonstrates a secure AWS cloud infrastructure using VPC, public/private subnets, NAT Gateway, Internet Gateway, VPN connectivity, and database isolation. The architecture follows AWS networking and security best practices to protect backend resources while maintaining internet accessibility for web applications.
-# Project Screenshots
+# Secure AWS Web Hosting with Private Database
 
-## Architecture Diagram
+## Overview
 
-![Architecture](AWS_architecture_diagram.png)
+This project demonstrates a secure AWS cloud infrastructure architecture using Amazon VPC, public and private subnets, NAT Gateway, Internet Gateway, VPN connectivity, and database isolation.
 
-## VPC Configuration
-
-![VPC](Screenshots/Vpc.png.png)
-
-## Public Subnet
-
-![Public Subnet](Screenshots/public_subnet.png.png)
-
-## Private Subnet
-
-![Private Subnet](Screenshots/private_subnet.png.png)
-
-## NAT Gateway
-
-![NAT Gateway](Screenshots/NAT_Gateway.png.png)
-
-## Internet Gateway
-
-![Internet Gateway](Screenshots/Internet_gateway.png.png)
-
-## Route Table
-
-![Route Table](Screenshots/Routetable.png.png)
-
-## EC2 Instance
-
-![EC2](Screenshots/EC2-instances.png.png)
-
-## Database Tables
-
-![Database](Screenshots/MySQL_Tables.png.png)
-
-## Project Overview
-
-This project demonstrates the design and implementation of a secure AWS cloud infrastructure for hosting a web application.
-
-The architecture uses:
-
-- Amazon VPC
-- Public and Private Subnets
-- Internet Gateway
-- NAT Gateway
-- VPN Connectivity
-- Database Isolation
-- Security Groups
-
-The goal is to securely host a web application while protecting backend resources from direct internet exposure.
-
----
-
-## Architecture Diagram
-
-![Architecture Diagram](AWS_architecture_diagram_png.png)
-
----
+The goal is to host a web application securely while protecting backend resources from direct internet exposure.
 
 ## AWS Services Used
 
-| Service | Purpose |
-|----------|----------|
-| VPC | Network Isolation |
-| EC2 | Web/Application Server |
-| NAT Gateway | Outbound Internet Access |
-| Internet Gateway | Public Internet Access |
-| VPN | Secure Remote Access |
-| Security Groups | Traffic Control |
-| Database | Data Storage |
-
----
-
-## Network Architecture
-
-### Public Subnet
-
-Contains:
-
-- EC2 Web Server
+- Amazon VPC
+- EC2
 - NAT Gateway
+- Internet Gateway
+- VPN
+- Security Groups
+- Route Tables
+- MySQL Database
 
-### Private Subnet
+## Architecture Highlights
 
-Contains:
+- Public subnet for web/application resources
+- Private subnet for database resources
+- Secure database isolation
+- Controlled traffic using Security Groups
+- NAT Gateway for outbound internet access
+- VPN-based secure administrative access
 
-- Database Server
-- Internal Resources
-
-The database is not exposed directly to the internet.
-
----
-
-## Security Features
-
-- Private Database Isolation
-- VPN-Based Secure Access
-- Security Group Restrictions
-- Public/Private Subnet Segregation
-- Controlled Inbound and Outbound Traffic
-
----
-
-## Challenges Faced
-
-### Challenge 1
-
-Private subnet resources could not access the internet.
-
-### Solution
-
-Configured NAT Gateway and updated route tables.
-
----
-
-### Challenge 2
-
-Application server could not connect to database.
-
-### Solution
-
-Updated security groups and routing configurations.
-
----
-
-## Documentation
-
-Detailed project documentation is available in:
+## Project Documentation
 
 - AWS_Project_Report.pdf
+- Documentation_Part.pdf
 
----
+## Architecture Diagram
+
+![Architecture Diagram](AWS_architecture_diagram.png)
+
+# Project Screenshots
+
+## VPC Configuration
+
+![VPC](Screenshots/Vpc.png)
+
+## Public Subnet
+
+![Public Subnet](Screenshots/public_subnet.png)
+
+## Private Subnet
+
+![Private Subnet](Screenshots/private_subnet.png)
+
+## NAT Gateway
+
+![NAT Gateway](Screenshots/NAT_Gateway.png)
+
+## Internet Gateway
+
+![Internet Gateway](Screenshots/Internet_gateway.png)
+
+## Route Table
+
+![Route Table](Screenshots/Routetable.png)
+
+## EC2 Instance
+
+![EC2 Instance](Screenshots/EC2-instances.png)
+
+## Database Tables
+
+![Database Tables](Screenshots/MySQL_Tables.png)
+
+## Security Group (Inbound Rules)
+
+![Inbound Rules](Screenshots/Security_group_db_server(Inbound).png)
+
+## Security Group (Outbound Rules)
+
+![Outbound Rules](Screenshots/Security_group_dbserver(Outbound).png)
 
 ## Author
 
@@ -142,4 +83,4 @@ Devekishan Kumar Singh
 
 B.Tech CSE Student
 
-AWS Cloud Enthusiast
+AWS & Cloud Computing Enthusiast
